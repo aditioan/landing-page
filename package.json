@@ -1,7 +1,14 @@
 {
-  "name": "pk2-angular",
+  "name": "landing-page-angular",
+  "description": "Just simple landing page with angular and paper kit 2 template",
   "version": "1.0.0",
+  "author": "Aditio Agung Nugroho <aditioan.uny@gmail.com>",
+  "homepage": "https://github.com/aditioan/landing-page",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aditioan/landing-page.git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
