@@ -5,7 +5,7 @@ Just simple landing page with **Angular 5 and [Paper Kit 2](https://www.github.c
 
 ### Installation
 
-This landing page requires [Node.js](https://nodejs.org/) v4+ and [AngularCLI](https://cli.angular.io/) to run.
+This landing page requires [Node.js](https://nodejs.org/) v4+ and [Angular CLI](https://cli.angular.io/) to run.
 
 Install the dependencies and devDependencies and start the server.
 
@@ -28,7 +28,7 @@ This landing page is currently extended with the following plugins. Instructions
 
 | Plugin | README |
 | ------ | ------ |
-| Ng Bootstrap | [https://github.com/ng-bootstrap/ng-bootstrap/blob/master/README.md][PlGa] |
+| Ng Bootstrap | [https://github.com/ng-bootstrap/ng-bootstrap/blob/master/README.md] |
 
 
 ### Development
