@@ -2,6 +2,10 @@
     background-attachment: fixed;
     position: relative;
     line-height: 20px;
+    min-height: 500px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
 }
 .footer nav > ul {
   list-style: none;
@@ -44,7 +48,7 @@
     color: #EB5E28;
 }
 .footer{
-    background-color: $white-color;
+    background-color: #000;
     line-height: $line-height;
 
     &.footer-black{
@@ -113,6 +117,18 @@
     }
     .title{
         color: $default-states-color;
+    }
+
+    h3{
+        color: $white-color;
+        font-weight: bold;
+        text-align: right;
+        text-transform: uppercase;
+        margin-bottom: 10%;
+    }
+
+    p{
+        color: $white-color;
     }
 }
 
