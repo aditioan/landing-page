@@ -1,6 +1,6 @@
 .carousel-control-prev,
 .carousel-control-next{
-    background-color: $white-color;
+    background-color: $warning-color;
     border-radius: 50%;
     opacity: 1;
     text-shadow: none;
@@ -9,7 +9,7 @@
     &:hover,
     &:focus{
         opacity: 1;
-        background-color: $white-states-color;
+        background-color: $warning-states-color;
     }
 }
 .carousel-control-prev-icon{
