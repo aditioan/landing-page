@@ -13,15 +13,17 @@
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
     padding: 0;
-    background: $white-color;
+    margin-left: -150px;
+    background: $default-bg-color;
+    opacity: 0.9;
     box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
 
     .navbar-brand{
         font-weight: $font-weight-bold;
         margin: $navbar-margin-brand;
         padding: $navbar-padding-brand;
-        font-size: $font-size-base;
-        color: $default-color;
+        font-size: $font-size-large;
+        color: $white-color;
         text-transform: uppercase;
     }
     .nav-link{
@@ -52,11 +54,11 @@
             line-height: 1.6;
             margin: $navbar-margin-a;
             padding: $navbar-padding-a;
-            opacity: .8;
-            font-size: $font-size-small;
-            text-transform: uppercase;
+            /*opacity: .8;*/
+            font-size: $font-size-medium;
+            /*text-transform: uppercase;*/
             font-weight: 600;
-            color: $default-color;
+            color: $white-color;
          }
         .nav-item .nav-link.btn{
             margin: $navbar-margin-a-btn;

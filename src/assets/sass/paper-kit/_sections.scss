@@ -29,7 +29,32 @@
     color: $white-color;
 }
 .section-dark{
-    background-color: #0b1011;
+    background-color: #363636;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-dark-content{
+    background-color: #363636;
+    height: 500px;
+}
+.section-dark-box{
+    padding: 70px 0;
+    position: relative;
+    background-color: #235983;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 600px;
+    z-index: 100;
+    margin-top: -115px;
+    border-radius: 1%;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+    p {
+        color: $white-color;
+    }
 }
 .section-image,
 .section-gold,
