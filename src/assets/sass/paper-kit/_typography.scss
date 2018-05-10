@@ -202,7 +202,16 @@ blockquote small{
     font-weight: bold;
     margin-bottom: -3%;
 }
-.line-title{
+.line-title-first{
+    display: block;
+    border-bottom: solid 5px;
+    float: right;
+    width: 46%;
+    border-bottom-style: outset;
+    margin-top: 4%;
+    margin-left: 3%;
+}
+.line-title-second{
     display: block;
     border-bottom: solid 5px;
     float: right;
@@ -211,7 +220,7 @@ blockquote small{
     margin-top: 4%;
     margin-left: 3%;
 }
-.line-title-long{
+.line-title-third{
     display: block;
     border-bottom: solid 5px;
     float: right;
