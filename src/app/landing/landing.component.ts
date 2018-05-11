@@ -1,18 +1,19 @@
 // import * as $ from "jquery";
 import { Component, OnInit, Input } from '@angular/core';
-import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+import {NgbModal, ModalDismissReasons, NgbCarousel} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
     selector: 'app-landing',
     templateUrl: './landing.component.html',
     styleUrls: ['./landing.component.scss'],
+    providers: [NgbCarousel]
 })
 
 export class LandingComponent implements OnInit {
 
     closeResult: string;
 
-    constructor(private modalService: NgbModal) {}
+    constructor(private modalService: NgbModal, public carouselService: NgbCarousel) {}
 
     ngOnInit() {}
   
@@ -22,6 +23,10 @@ export class LandingComponent implements OnInit {
       }, (reason) => {
         this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
       });
+    }
+
+    selectSlide(id) {
+      console.log(id)
     }
   
     private getDismissReason(reason: any): string {

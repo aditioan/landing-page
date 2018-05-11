@@ -52,7 +52,7 @@
 }
 .carousel-left {
     text-align: left;
-    padding-bottom: 130px;
+    padding-bottom: 150px;
 }
 .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .fa, .carousel-control .fa {
     display: inline-block;
@@ -76,6 +76,8 @@
     border-radius: $border-radius-extreme !important;
     border: none !important;
     width: 100%;
+    min-height: 100vh;
+    max-height: 725px;
 }
 
 .carousel-inner{
@@ -97,7 +99,7 @@
     }
 }
 .carousel-indicators{
-    bottom: 175px;
+    bottom: 190px;
     justify-content: left;
 }
 .carousel-indicators li{
@@ -106,6 +108,21 @@
 }
 .carousel-indicators .active{
     background-color: $warning-color;
+}
+.carousel-indicators-thumbnail{
+    bottom: 165px;
+    position: relative;
+    justify-content: left;
+    margin-left: 15%;
+}
+.carousel-indicators-thumbnail img{
+    max-width: 11%;
+    min-height: 12vh;
+    margin-right: 1%;
+    border: solid 1px $warning-color;
+}
+.carousel-indicators-thumbnail img:hover{
+    opacity: 0.7;
 }
 .page-carousel:hover{
     .carousel-control-prev,
