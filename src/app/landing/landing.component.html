@@ -80,6 +80,50 @@
 </div>
 <div class="section section-dark-content">
     <div class="section-dark-box">
+        <ng-template #content100 let-c="close" let-d="dismiss">
+            <div class="modal-header">
+                <h5 class="modal-title">#Cruise100</h5>
+            </div>
+            <div class="modal-body">
+                <div class="text-box">
+                    <h3 class="head-title-tag">Explore the land of fire</h3>
+                    <p class="text-content-slide">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="left-side">
+                    <button type="button" class="btn btn-default btn-link" (click)="c('Close click')">Register</button>
+                </div>
+                <div class="divider"></div>
+                <div class="right-side">
+                    <button type="button" class="btn btn-danger btn-link" (click)="c('Close click')">Maybe Next Time</button>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template #content101 let-c="close" let-d="dismiss">
+                <div class="modal-header">
+                    <h5 class="modal-title">#Cruise101</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="text-box">
+                        <h3 class="head-title-tag">Explore the land of fire</h3>
+                        <p class="text-content-slide">
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="left-side">
+                        <button type="button" class="btn btn-default btn-link" (click)="c('Close click')">Register</button>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="right-side">
+                        <button type="button" class="btn btn-danger btn-link" (click)="c('Close click')">Maybe Next Time</button>
+                    </div>
+                </div>
+            </ng-template>
         <ngb-carousel>
             <ng-template ngbSlide>
                 <div class="row">
@@ -132,7 +176,7 @@
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
                         </div>
-                        <button class="btn btn-warning btn-lg" style="margin-left: 5%">See Itinerary</button>
+                        <button class="btn btn-warning btn-lg" style="margin-left: 5%" (click)="open(content100)">See Itinerary</button>
                     </div>
                 </div>
             </ng-template>
@@ -187,7 +231,7 @@
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
                         </div>
-                        <button class="btn btn-warning btn-lg" style="margin-left: 5%">See Itinerary</button>
+                        <button class="btn btn-warning btn-lg" style="margin-left: 5%" (click)="open(content101)">See Itinerary</button>
                     </div>
                 </div>
             </ng-template>
