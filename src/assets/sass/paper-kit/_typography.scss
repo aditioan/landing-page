@@ -154,6 +154,7 @@ blockquote small{
     font-weight: 600;
     border-left: solid;
     padding-left: 2%;
+    font-size: 22px;
 }
 .text-content{
     margin-left: 2%;
@@ -186,11 +187,13 @@ blockquote small{
 }
 .text-image-small{
     text-align: right;
-    font-family: 'Times', sans-serif;
-    color: $white-color;
     padding-right: 2%;
     text-transform: uppercase;
     font-size: $font-size-h3;
+    a{
+        font-family: 'Times', sans-serif;
+        color: $white-color;
+    }
 }
 .read-more{
     text-transform: uppercase;

@@ -60,20 +60,22 @@
                 <h2 class="head-title">Explore the land of fire</h2>
                 <div>
                     <img src="../assets/img/federico-beccari.jpg" class="img-content" alt="Random first image">
-                    <button class="btn btn-outline-neutral btn-sm img-caption">#Cruise100</button>
+                    <a href="#cruises" (click)="itineraryCarousel.select('firstItinerary')" class="btn btn-outline-neutral btn-sm img-caption">#Cruise100</a>
                 </div>
                 <p class="text-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span class="read-more">Read more</span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span *ngIf="!content1" (click)="showMore(1)" class="read-more">Read more</span>
+                    <span *ngIf="content1">Nam ultricies augue sed mattis gravida. Nullam eget sapien vel elit mollis accumsan vel in lacus. Phasellus sodales nec risus vel pulvinar. Praesent quis nisl sit amet libero sollicitudin lobortis. Etiam pellentesque eros ac dui lacinia commodo ut non tortor.</span>
                 </p>
             </div>
             <div class="col-md-6">
                 <h2 class="head-title">Journey to sea paradise</h2>
                 <div>
                     <img src="../assets/img/soroush-karimi.jpg" class="img-content" alt="Random second image">
-                    <button class="btn btn-outline-neutral btn-sm img-caption">#Cruise101</button>
+                    <a href="#cruises" (click)="itineraryCarousel.select('secondItinerary')" class="btn btn-outline-neutral btn-sm img-caption">#Cruise101</a>
                 </div>
                 <p class="text-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span class="read-more">Read more</span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span *ngIf="!content2" (click)="showMore(2)" class="read-more">Read more</span>
+                    <span *ngIf="content2">Nam ultricies augue sed mattis gravida. Nullam eget sapien vel elit mollis accumsan vel in lacus. Phasellus sodales nec risus vel pulvinar. Praesent quis nisl sit amet libero sollicitudin lobortis. Etiam pellentesque eros ac dui lacinia commodo ut non tortor.</span>
                 </p>
             </div>
         </div>
@@ -82,10 +84,10 @@
 <div class="section section-dark" style="background-image: url('../assets/img/live-in-the-moment.jpg');">
     <div class="vertical-center">
         <h1 class="text-image">Live in the<br>moment</h1>
-        <h2 class="text-image-small">Register now!</h2>
+        <h2 class="text-image-small"><a href="#event">Register now!</a></h2>
     </div>
 </div>
-<div class="section section-dark-content">
+<div class="section section-dark-content" id="cruises">
     <div class="section-dark-box">
         <ng-template #content100 let-c="close" let-d="dismiss">
             <div class="modal-header">
@@ -101,7 +103,7 @@
             </div>
             <div class="modal-footer">
                 <div class="left-side">
-                    <button type="button" class="btn btn-default btn-link" (click)="c('Close click')">Register</button>
+                    <a href="#event" class="btn btn-default btn-link" (click)="c('Close click')">Register</a>
                 </div>
                 <div class="divider"></div>
                 <div class="right-side">
@@ -306,14 +308,14 @@
                 <p>
                     Peace Boat gained Special Consultative Status with the UN Economic and Social Council in 2002
                 </p>
-                <button class="btn btn-warning btn-lg">Visit Peace Boat Global Site</button>
+                <a href="http://pbcruise.com/" target="_blank" class="btn btn-warning btn-lg">Visit Peace Boat Global Site</a>
             </div>
         </div>
     </div>
     
     <h1 class="head-section">Featured Upcoming Event</h1>
 </div>
-<div class="section section-dark" style="background-image: url('../assets/img/night-light-bg.jpg');">
+<div class="section section-dark" id="event" style="background-image: url('../assets/img/night-light-bg.jpg');">
     <div class="section-dark-main">
         <div class="row">
             <div class="col-md-1"></div>
@@ -329,16 +331,16 @@
                 <h4 class="text-heading">Time:</h4>
                 <p><b>Session 1 : 10:30am - 12:30pm</b></p>
                 <p><b>Session 2 : 02:30pm - 04:30pm</b></p>
-                <button class="btn btn-warning btn-lg">It's free! Register now</button>
+                <a href="#register" class="btn btn-warning btn-lg">It's free! Register now</a>
             </div>
         </div>
     </div>
 </div>
-<div class="section section-dark-content">
+<div class="section section-dark-content" id="register">
     <div class="section-dark-container">
         <div class="row">
             <div class="col-md-8 mr-auto ml-auto">
-                <h2 class="text-center">Keep in touch?</h2>
+                <h2 class="text-center">Register</h2>
                 <form class="contact-form">
                     <div class="row">
                         <div class="col-md-6">

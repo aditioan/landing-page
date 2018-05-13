@@ -1,21 +1,31 @@
 // import * as $ from "jquery";
-import { Component, OnInit, Input } from '@angular/core';
-import {NgbModal, ModalDismissReasons, NgbCarousel} from '@ng-bootstrap/ng-bootstrap';
+import { Component, OnInit, Input, ViewChild} from '@angular/core';
+import {NgbModal, ModalDismissReasons, NgbCarousel, NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
     selector: 'app-landing',
     templateUrl: './landing.component.html',
     styleUrls: ['./landing.component.scss'],
-    providers: [NgbCarousel]
+    providers: [NgbCarousel, NgbCarouselConfig]
 })
 
 export class LandingComponent implements OnInit {
 
     closeResult: string;
+    content1: boolean;
+    content2: boolean;
 
-    constructor(private modalService: NgbModal, public carouselService: NgbCarousel) {}
+    @ViewChild('itineraryCarousel') itineraryCarousel: NgbCarousel;
 
-    ngOnInit() {}
+    constructor(private modalService: NgbModal, public carouselService: NgbCarousel) {
+      this.content1 = false;
+      this.content2 = false;
+    }
+
+    ngOnInit() {
+      // console.log()
+      this.itineraryCarousel.interval = 0;
+    }
   
     open(content) {
       this.modalService.open(content, {size: 'lg'}).result.then((result) => {
@@ -27,6 +37,14 @@ export class LandingComponent implements OnInit {
 
     selectSlide(id) {
       console.log(id)
+    }
+
+    showMore(content) {
+      if (content == 1) {
+        this.content1 = true;
+      } else {
+        this.content2 = true;
+      }
     }
   
     private getDismissReason(reason: any): string {
