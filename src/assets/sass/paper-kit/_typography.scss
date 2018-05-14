@@ -192,7 +192,7 @@ blockquote small{
     font-size: $font-size-h3;
     a{
         font-family: 'Times', sans-serif;
-        color: $white-color;
+        color: $white-color !important;
     }
 }
 .read-more{

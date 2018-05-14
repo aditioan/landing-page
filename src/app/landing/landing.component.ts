@@ -41,9 +41,9 @@ export class LandingComponent implements OnInit {
 
     showMore(content) {
       if (content == 1) {
-        this.content1 = true;
+        this.content1 = !this.content1;
       } else {
-        this.content2 = true;
+        this.content2 = !this.content2;
       }
     }
   

@@ -60,22 +60,24 @@
                 <h2 class="head-title">Explore the land of fire</h2>
                 <div>
                     <img src="../assets/img/federico-beccari.jpg" class="img-content" alt="Random first image">
-                    <a href="#cruises" (click)="itineraryCarousel.select('firstItinerary')" class="btn btn-outline-neutral btn-sm img-caption">#Cruise100</a>
+                    <button type="button" [ngx-scroll-to]="'#cruises'" (click)="itineraryCarousel.select('firstItinerary')" class="btn btn-outline-neutral btn-sm img-caption">#Cruise100</button>
                 </div>
                 <p class="text-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span *ngIf="!content1" (click)="showMore(1)" class="read-more">Read more</span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span *ngIf="!content1" (click)="showMore(1)" class="read-more">Show more</span>
                     <span *ngIf="content1">Nam ultricies augue sed mattis gravida. Nullam eget sapien vel elit mollis accumsan vel in lacus. Phasellus sodales nec risus vel pulvinar. Praesent quis nisl sit amet libero sollicitudin lobortis. Etiam pellentesque eros ac dui lacinia commodo ut non tortor.</span>
+                    <span *ngIf="content1" (click)="showMore(1)" class="read-more">Show Less</span>
                 </p>
             </div>
             <div class="col-md-6">
                 <h2 class="head-title">Journey to sea paradise</h2>
                 <div>
                     <img src="../assets/img/soroush-karimi.jpg" class="img-content" alt="Random second image">
-                    <a href="#cruises" (click)="itineraryCarousel.select('secondItinerary')" class="btn btn-outline-neutral btn-sm img-caption">#Cruise101</a>
+                    <button type="button" [ngx-scroll-to]="'#cruises'" (click)="itineraryCarousel.select('secondItinerary')" class="btn btn-outline-neutral btn-sm img-caption">#Cruise101</button>
                 </div>
                 <p class="text-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span *ngIf="!content2" (click)="showMore(2)" class="read-more">Read more</span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span *ngIf="!content2" (click)="showMore(2)" class="read-more">Show more</span>
                     <span *ngIf="content2">Nam ultricies augue sed mattis gravida. Nullam eget sapien vel elit mollis accumsan vel in lacus. Phasellus sodales nec risus vel pulvinar. Praesent quis nisl sit amet libero sollicitudin lobortis. Etiam pellentesque eros ac dui lacinia commodo ut non tortor.</span>
+                    <span *ngIf="content2" (click)="showMore(2)" class="read-more">Show less</span>
                 </p>
             </div>
         </div>
@@ -84,7 +86,7 @@
 <div class="section section-dark" style="background-image: url('../assets/img/live-in-the-moment.jpg');">
     <div class="vertical-center">
         <h1 class="text-image">Live in the<br>moment</h1>
-        <h2 class="text-image-small"><a href="#event">Register now!</a></h2>
+        <h2 class="text-image-small"><a [ngx-scroll-to]="'#event'">Register now!</a></h2>
     </div>
 </div>
 <div class="section section-dark-content" id="cruises">
@@ -103,7 +105,7 @@
             </div>
             <div class="modal-footer">
                 <div class="left-side">
-                    <a href="#event" class="btn btn-default btn-link" (click)="c('Close click')">Register</a>
+                    <button type="button" [ngx-scroll-to]="'#event'" class="btn btn-default btn-link" (click)="c('Close click')">Register</button>
                 </div>
                 <div class="divider"></div>
                 <div class="right-side">
@@ -125,7 +127,7 @@
                 </div>
                 <div class="modal-footer">
                     <div class="left-side">
-                        <button type="button" class="btn btn-default btn-link" (click)="c('Close click')">Register</button>
+                        <button type="button" [ngx-scroll-to]="'#event'" class="btn btn-default btn-link" (click)="c('Close click')">Register</button>
                     </div>
                     <div class="divider"></div>
                     <div class="right-side">
@@ -185,7 +187,7 @@
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
                         </div>
-                        <button class="btn btn-warning btn-lg" style="margin-left: 5%" (click)="open(content100)">See Itinerary</button>
+                        <button type="button" class="btn btn-warning btn-lg" style="margin-left: 5%" (click)="open(content100)">See Itinerary</button>
                         <h4 (click)="itineraryCarousel.select('secondItinerary')">Next <i class="fa fa-angle-right" aria-hidden="true"></i> Cruise 101</h4>
                     </div>
                 </div>
@@ -241,7 +243,7 @@
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
                         </div>
-                        <button class="btn btn-warning btn-lg" style="margin-left: 5%" (click)="open(content101)">See Itinerary</button>
+                        <button type="button" class="btn btn-warning btn-lg" style="margin-left: 5%" (click)="open(content101)">See Itinerary</button>
                         <h4 (click)="itineraryCarousel.select('firstItinerary')">Prev <i class="fa fa-angle-left" aria-hidden="true"></i> Cruise 100</h4>
                     </div>
                 </div>
@@ -331,7 +333,7 @@
                 <h4 class="text-heading">Time:</h4>
                 <p><b>Session 1 : 10:30am - 12:30pm</b></p>
                 <p><b>Session 2 : 02:30pm - 04:30pm</b></p>
-                <a href="#register" class="btn btn-warning btn-lg">It's free! Register now</a>
+                <button type="button" [ngx-scroll-to]="'#register'" class="btn btn-warning btn-lg">It's free! Register now</button>
             </div>
         </div>
     </div>
@@ -366,7 +368,7 @@
                     <textarea class="form-control" rows="4" placeholder="Tell us your thoughts and feelings..."></textarea>
                     <div class="row">
                         <div class="col-md-4 mr-auto ml-auto">
-                            <button class="btn btn-warning btn-lg btn-fill">Send Message</button>
+                            <button type="button" class="btn btn-warning btn-lg btn-fill">Register</button>
                         </div>
                     </div>
                 </form>

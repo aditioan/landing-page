@@ -52,7 +52,8 @@
 }
 .carousel-left {
     text-align: left;
-    padding-bottom: 150px;
+    padding-bottom: 0px;
+    left: 5%;
 }
 .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .fa, .carousel-control .fa {
     display: inline-block;
@@ -116,7 +117,7 @@
     margin-left: 15%;
 }
 .carousel-indicators-thumbnail img{
-    max-width: 11%;
+    max-width: 9%;
     min-height: 12vh;
     margin-right: 1%;
     border: solid 1px $warning-color;

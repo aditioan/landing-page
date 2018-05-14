@@ -6,10 +6,37 @@
             font-weight: $font-weight-bold;
             margin-left: auto;
             margin-right: auto;
+            position: relative;
+            right: -3%;
             font-size: $font-size-h3;
             color: $white-color;
             text-transform: uppercase;
         }
+    }
+
+    .carousel-indicators-thumbnail img{
+        min-height: 6vh !important;
+    }
+
+    .head-tag{
+        font-size: 4.6em;
+    }
+
+    .section-dark-box .carousel-indicators{
+        bottom: 20px;
+    }
+
+    .img-caption{
+        margin-top: -30%;
+    }
+
+    .text-image{
+        padding-right: 5%;
+        padding-top: 90%;
+    }
+
+    .text-image-small{
+        padding-right: 5%;
     }
 
     .navbar-transparent{
