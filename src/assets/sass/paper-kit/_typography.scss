@@ -156,6 +156,15 @@ blockquote small{
     padding-left: 2%;
     font-size: 22px;
 }
+.header-caption{
+    position: absolute;
+    z-index: 99;
+    color: white;
+    font-weight: bold;
+    top: 20%;
+    left: 5%;
+    font-family: serif;
+}
 .text-content{
     margin-left: 2%;
     margin-right: 2%;
@@ -171,6 +180,24 @@ blockquote small{
     margin-top: 5%;
     font-weight: 500;
     font-size: $font-size-medium;
+}
+.list-section{
+    color: $white-color;
+    font-family: 'Lato', "Helvetica", Arial, sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+
+}
+.hide{
+    display: none;
+}
+ul.list-section{
+    list-style: none;
+}
+ul.list-section li::before{
+    content: '- ';
+    color: $white-color;
+    -webkit-font-smoothing: antialiased;
 }
 .text-box{
     border-left: solid 3px #ffce00;
@@ -209,7 +236,7 @@ blockquote small{
     display: block;
     border-bottom: solid 5px;
     float: right;
-    width: 41%;
+    width: 74%;
     border-bottom-style: outset;
     margin-top: 4%;
     margin-left: 3%;
@@ -218,7 +245,7 @@ blockquote small{
     display: block;
     border-bottom: solid 5px;
     float: right;
-    width: 28%;
+    width: 57%;
     border-bottom-style: outset;
     margin-top: 4%;
     margin-left: 3%;
@@ -227,7 +254,7 @@ blockquote small{
     display: block;
     border-bottom: solid 5px;
     float: right;
-    width: 67%;
+    width: 41%;
     border-bottom-style: outset;
     margin-top: 4%;
     margin-left: 3%;
