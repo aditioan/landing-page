@@ -11,46 +11,46 @@
     </div>
 </div> -->
 <div class="page-header">
-    <h2 class="header-caption">Around The World Cruise Peace Boat</h2>
+    <!-- <h2 class="header-caption">Around The World Cruise Peace Boat</h2> -->
     <div class="page-carousel">
         <ngb-carousel #headerCarousel="ngbCarousel">
             <ng-template ngbSlide id="firstSlide">
-                <img src="../assets/img/slides/Slide_1.jpg" alt="Random first slide">
+                <img src="../assets/img/slides/header-01.jpg" alt="Random first slide">
                 <div class="carousel-caption carousel-left">
                     <p><b>Indonesia</b></p>
                 </div>
             </ng-template>
             <ng-template ngbSlide id="secondSlide">
-                <img src="../assets/img/daniel-olahh.jpg" alt="Random second slide">
+                <img src="../assets/img/slides/header-02.JPG" alt="Random second slide">
                 <div class="carousel-caption carousel-left">
                     <p><b>Hawai</b></p>
                 </div>
             </ng-template>
             <ng-template ngbSlide id="thirdSlide">
-                <img src="../assets/img/antoine-barres.jpg" alt="Random third slide">
+                <img src="../assets/img/slides/header-03.jpg" alt="Random third slide">
                 <div class="carousel-caption carousel-left">
                     <p><b>Germany</b></p>
                 </div>
             </ng-template>
             <ng-template ngbSlide id="fourthSlide">
-                <img src="../assets/img/joshua-stannard.jpg" alt="Random fourth slide">
+                <img src="../assets/img/slides/header-04.jpg" alt="Random fourth slide">
                 <div class="carousel-caption carousel-left">
                     <p><b>Japan</b></p>
                 </div>
             </ng-template>
             <ng-template ngbSlide id="fifthSlide">
-                <img src="../assets/img/bruno-abatti.jpg" alt="Random fifth slide">
+                <img src="../assets/img/slides/header-05.JPG" alt="Random fifth slide">
                 <div class="carousel-caption carousel-left">
                     <p><b>Canada</b></p>
                 </div>
             </ng-template>
         </ngb-carousel>
         <div class="carousel-indicators-thumbnail">
-            <img src="../assets/img/slides/Slide_1.jpg" (click)="headerCarousel.select('firstSlide')" alt="Random first slide">
-            <img src="../assets/img/daniel-olahh.jpg" (click)="headerCarousel.select('secondSlide')" alt="Random second slide">
-            <img src="../assets/img/antoine-barres.jpg" (click)="headerCarousel.select('thirdSlide')" alt="Random third slide">
-            <img src="../assets/img/joshua-stannard.jpg" (click)="headerCarousel.select('fourthSlide')" alt="Random fourth slide">
-            <img src="../assets/img/bruno-abatti.jpg" (click)="headerCarousel.select('fifthSlide')" alt="Random fifth slide">
+            <img src="../assets/img/slides/header-01.jpg" (click)="headerCarousel.select('firstSlide')" alt="Random first slide">
+            <img src="../assets/img/slides/header-02.JPG" (click)="headerCarousel.select('secondSlide')" alt="Random second slide">
+            <img src="../assets/img/slides/header-03.jpg" (click)="headerCarousel.select('thirdSlide')" alt="Random third slide">
+            <img src="../assets/img/slides/header-04.jpg" (click)="headerCarousel.select('fourthSlide')" alt="Random fourth slide">
+            <img src="../assets/img/slides/header-05.JPG" (click)="headerCarousel.select('fifthSlide')" alt="Random fifth slide">
         </div>
     </div>
 </div>
@@ -58,27 +58,37 @@
     <div class="section-dark-box">
         <div class="row">
             <div class="col-md-6">
-                <h2 class="head-title">Explore the land of fire</h2>
+                <h3 class="head-title">A Trip to be Remembered, A Journey to the Land of Ice and Fire</h3>
                 <div>
-                    <img src="../assets/img/federico-beccari.jpg" class="img-content" alt="Random first image">
-                    <button type="button" [ngx-scroll-to]="'#cruises'" (click)="itineraryCarousel.select('firstItinerary')" class="btn btn-outline-neutral btn-sm img-caption">#Cruise100</button>
+                    <img src="../assets/img/madagascar.jpg" class="img-content" alt="Random first image">
+                    <button type="button" [ngx-scroll-to]="'#cruises'" (click)="itineraryCarousel.select('firstItinerary')" class="btn btn-outline-neutral btn-sm img-caption">The 100th Global Voyage</button>
                 </div>
+                <p class="head-title-small" style="font-size: 18px">
+                    December 26, 2018 – March 31, 2019 <br>
+                    (Yokohama, Japan - Yokohama, Japan / 96 days)
+                </p>
                 <p class="text-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span *ngIf="!content1" (click)="showMore(1)" class="read-more">Show more</span>
+                    This voyage traverses the Southern Hemisphere to explore the awe-inspiring nature of Port Elizabeth, Madagascar, Bora Bora, Argentina, and more. <span [ngx-scroll-to]="'#cruises'" (click)="itineraryCarousel.select('firstItinerary')" class="read-more">Show more</span>
+                    <!-- <span *ngIf="!content1" (click)="showMore(1)" class="read-more">Show more</span>
                     <span *ngIf="content1">Nam ultricies augue sed mattis gravida. Nullam eget sapien vel elit mollis accumsan vel in lacus. Phasellus sodales nec risus vel pulvinar. Praesent quis nisl sit amet libero sollicitudin lobortis. Etiam pellentesque eros ac dui lacinia commodo ut non tortor.</span>
-                    <span *ngIf="content1" (click)="showMore(1)" class="read-more">Show Less</span>
+                    <span *ngIf="content1" (click)="showMore(1)" class="read-more">Show Less</span> -->
                 </p>
             </div>
             <div class="col-md-6">
-                <h2 class="head-title">Journey to sea paradise</h2>
+                <h2 class="head-title" style="margin-bottom: 15px;">A Voyage to Six Continents</h2>
                 <div>
-                    <img src="../assets/img/soroush-karimi.jpg" class="img-content" alt="Random second image">
-                    <button type="button" [ngx-scroll-to]="'#cruises'" (click)="itineraryCarousel.select('secondItinerary')" class="btn btn-outline-neutral btn-sm img-caption">#Cruise101</button>
+                    <img src="../assets/img/egypt-main.jpg" class="img-content" alt="Random second image">
+                    <button type="button" [ngx-scroll-to]="'#cruises'" (click)="itineraryCarousel.select('secondItinerary')" class="btn btn-outline-neutral btn-sm img-caption">The 101st Global Voyage</button>
                 </div>
+                <p class="head-title-small" style="font-size: 18px">
+                    April 20 – August 1, 2019 <br>
+                    (Yokohama, Japan - Yokohama, Japan / 104 days)
+                </p>
                 <p class="text-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span *ngIf="!content2" (click)="showMore(2)" class="read-more">Show more</span>
+                    Along the way, you’ll see the mighty pyramids of Giza at Egypt, then you'll visit Europe countries, New York, Easter Island and more. The ship will travel to the South Pacific in July – a perfect position to view the total solar eclipse of 2019. <span [ngx-scroll-to]="'#cruises'" (click)="itineraryCarousel.select('secondItinerary')" class="read-more">Show more</span>
+                    <!-- <span *ngIf="!content2" (click)="showMore(2)" class="read-more">Show more</span>
                     <span *ngIf="content2">Nam ultricies augue sed mattis gravida. Nullam eget sapien vel elit mollis accumsan vel in lacus. Phasellus sodales nec risus vel pulvinar. Praesent quis nisl sit amet libero sollicitudin lobortis. Etiam pellentesque eros ac dui lacinia commodo ut non tortor.</span>
-                    <span *ngIf="content2" (click)="showMore(2)" class="read-more">Show less</span>
+                    <span *ngIf="content2" (click)="showMore(2)" class="read-more">Show less</span> -->
                 </p>
             </div>
         </div>
@@ -86,21 +96,25 @@
 </div>
 <div class="section section-dark" style="background-image: url('../assets/img/live-in-the-moment.jpg');">
     <div class="vertical-center">
-        <h1 class="text-image">Live in the<br>moment</h1>
-        <h2 class="text-image-small"><a [ngx-scroll-to]="'#event'">Register now!</a></h2>
+        <h1 class="text-image">Find your Dream to explore <br> Around the World with us</h1>
+        <!-- <h2 class="text-image-small"><a [ngx-scroll-to]="'#event'">Register now!</a></h2> -->
     </div>
 </div>
 <div class="section section-dark-content" id="cruises">
     <div class="section-dark-box">
         <ng-template #content100 let-c="close" let-d="dismiss">
             <div class="modal-header">
-                <h5 class="modal-title">#Cruise100</h5>
+                <h5 class="modal-title">The 100th Global Voyage</h5>
             </div>
             <div class="modal-body">
                 <div class="text-box">
-                    <h3 class="head-title-tag">Explore the land of fire</h3>
+                    <h3 class="head-title-tag">A Trip to be Remembered, A Journey to the Land of Ice and Fire</h3>
+                    <h5 style="color: #fff; font-weight: bold;">
+                        December 26, 2018 – March 31, 2019 <br>
+                        (Yokohama, Japan - Yokohama, Japan / 96 days)
+                    </h5>
                     <p class="text-content-slide">
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        This voyage traverses the Southern Hemisphere to explore the awe-inspiring nature of Port Elizabeth, Madagascar, Bora Bora, Argentina, and more. Experience Africa’s rich natural heritage on safari in Port Elizabeth and among the vibrant flora and fauna of Madagascar. Enjoy the breathtaking view of hundreds of endlessly cascading waterfalls in Iguazú Falls. You will explore the world’s oldest desert, the white beaches of Bora Bora, and the vibrant streets of Rio de Janeiro. For an extra fee, join a special expedition to one of the least-explored corners of the world: the great continent of Antarctica.
                     </p>
                 </div>
             </div>
@@ -116,13 +130,17 @@
         </ng-template>
         <ng-template #content101 let-c="close" let-d="dismiss">
                 <div class="modal-header">
-                    <h5 class="modal-title">#Cruise101</h5>
+                    <h5 class="modal-title">The 101st <br> Global Voyage</h5>
                 </div>
                 <div class="modal-body">
                     <div class="text-box">
-                        <h3 class="head-title-tag">Explore the land of fire</h3>
+                        <h3 class="head-title-tag">A Voyage to Six Continents</h3>
+                        <h5 style="color: #fff; font-weight: bold;">
+                            April 20 – August 1, 2019 <br>
+                            (Yokohama, Japan - Yokohama, Japan / 104 days)
+                        </h5>
                         <p class="text-content-slide">
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Embark on a once-in-a-lifetime voyage in pursuit of the total solar eclipse. Along the way, you’ll see the mighty pyramids of Giza, commissioned by great pharaohs in search of immortality. You’ll visit Easter Island, where the enigmatic mo’ai stand to greet you. Soak up the sun on the picturesque beaches of Mykonos and Tahiti, then sail by the Great Barrier Reef in beautiful Australia. The ship will travel to the South Pacific in July – a perfect position to view the total solar eclipse of 2019.
                         </p>
                     </div>
                 </div>
@@ -140,54 +158,61 @@
             <ng-template ngbSlide id="firstItinerary">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="row">
+                        <div class="row" style="margin-bottom: 10%;">
                             <div class="col-md-12">
-                                <h3 class="head-title-small">Paris</h3>
+                                <h3 class="head-title-small">Madagascar</h3>
                             </div>
                             <div class="col-md-6">
-                                <img src="../assets/img/uriel-soberanes.jpg" class="img-content-slide" alt="Random first image">
+                                <img src="../assets/img/madagascar.jpg" class="img-content-slide" alt="Random first image">
                             </div>
                             <div class="col-md-6">
                                 <p class="text-content-slide">
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    The island of Madagascar is an oasis, boasting an incredible diversity of plants and animals including the dancing sifaka lemur, the beautiful blue coua bird, and the black-and-yellow streaked tenrec. Most of this island’s wildlife can’t be found anywhere else in the world.
                                 </p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row" style="margin-bottom: 10%;">
                             <div class="col-md-12">
-                                <h3 class="head-title-small">Hawai</h3>
+                                <h3 class="head-title-small">Iguazú Falls</h3>
                             </div>
                             <div class="col-md-6">
-                                <img src="../assets/img/slides/Slide_2.jpg" class="img-content-slide" alt="Random second image">
+                                <img src="../assets/img/iguas.jpg" class="img-content-slide" alt="Random second image">
                             </div>
                             <div class="col-md-6">
                                 <p class="text-content-slide">
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Iguazú Falls stretches for three kilometres along the border of Brazil and Argentina, where the Iguazú River spills down from the Paraná Plateau. Faint rainbows of light and the crashing sound of over 200 waterfalls lend this place an otherworldly aura.
                                 </p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row" style="margin-bottom: 10%;">
                             <div class="col-md-12">
-                                <h3 class="head-title-small">Indonesia</h3>
+                                <h3 class="head-title-small">Antarctica</h3>
                             </div>
                             <div class="col-md-6">
-                                <img src="../assets/img/slides/Slide_3.jpg" class="img-content-slide" alt="Random third image">
+                                <img src="../assets/img/antartica.JPG" class="img-content-slide" alt="Random third image">
                             </div>
                             <div class="col-md-6">
                                 <p class="text-content-slide">
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Upgrade your trip for an additional journey to the great wilderness of Antarctica. For centuries, the continent has attracted daring explorers and adventurers, and you’ll see why: its vast beauty, uninhabited plains, and scores of rare wildlife are impossible to resist.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <h1 class="head-tag">#Cruise100</h1>
+                        <h1 class="head-tag">The 100th <br> Global Voyage</h1>
                         <div class="text-box">
-                            <h3 class="head-title-tag">Explore the land of fire</h3>
+                            <h3 class="head-title-tag">A Trip to be Remembered, A Journey to the Land of Ice and Fire</h3>
+                            <h5 style="color: #fff; font-weight: bold;">
+                                December 26, 2018 – March 31, 2019 <br>
+                                (Yokohama, Japan - Yokohama, Japan / 96 days)
+                            </h5>
                             <p class="text-content-slide">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                This voyage traverses the Southern Hemisphere to explore the awe-inspiring nature of Port Elizabeth, Madagascar, Bora Bora, Argentina, and more. Experience Africa’s rich natural heritage on safari in Port Elizabeth and among the vibrant flora and fauna of Madagascar. Enjoy the breathtaking view of hundreds of endlessly cascading waterfalls in Iguazú Falls. You will explore the world’s oldest desert, the white beaches of Bora Bora, and the vibrant streets of Rio de Janeiro. For an extra fee, join a special expedition to one of the least-explored corners of the world: the great continent of Antarctica.
                             </p>
                         </div>
+                        <!-- <div style="margin-bottom: 3%;">
+                            <img src="../assets/img/100th-map.jpg" class="map" alt="Map 100th">
+                        </div> -->
                         <button type="button" class="btn btn-warning btn-lg" style="margin-left: 5%" (click)="open(content100)">See Itinerary</button>
                         <h4 (click)="itineraryCarousel.select('secondItinerary')">Next <i class="fa fa-angle-right" aria-hidden="true"></i> Cruise 101</h4>
                     </div>
@@ -196,56 +221,63 @@
             <ng-template ngbSlide id="secondItinerary">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="row">
+                        <div class="row" style="margin-bottom: 3%;">
                             <div class="col-md-12">
-                                <h3 class="head-title-small">Paris</h3>
+                                <h3 class="head-title-small">Solar eclipse</h3>
                             </div>
                             <div class="col-md-6">
-                                <img src="../assets/img/uriel-soberanes.jpg" class="img-content-slide" alt="Random first image">
+                                <img src="../assets/img/solar-eclipse.jpg" class="img-content-slide" alt="Random first image">
                             </div>
                             <div class="col-md-6">
                                 <p class="text-content-slide">
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    One of the most breathtaking natural phenomena is the total solar eclipse. For a fleeting moment, the moon obscures the sun and completely blocks its light. The ship will travel to the perfect location to observe the eclipse on 2 July 2019.
                                 </p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row" style="margin-bottom: 3%;">
                             <div class="col-md-12">
-                                <h3 class="head-title-small">Hawai</h3>
+                                <h3 class="head-title-small">Egypt</h3>
                             </div>
                             <div class="col-md-6">
-                                <img src="../assets/img/slides/Slide_2.jpg" class="img-content-slide" alt="Random first image">
+                                <img src="../assets/img/egypt.jpg" class="img-content-slide" alt="Random first image">
                             </div>
                             <div class="col-md-6">
                                 <p class="text-content-slide">
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Witness the extraordinary craftsmanship of the pyramids, the last-standing Ancient Wonder of the World. They were built to last forever, as the Ancient Egyptians believed they would protect the spirits of the pharaohs. Indeed, the 4000-year-old monuments are a testament to the lasting legacy and achievements of Ancient Egypt.
                                 </p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row" style="margin-bottom: 3%;">
                             <div class="col-md-12">
-                                <h3 class="head-title-small">Indonesia</h3>
+                                <h3 class="head-title-small">Easter Island</h3>
                             </div>
                             <div class="col-md-6">
-                                <img src="../assets/img/slides/Slide_3.jpg" class="img-content-slide" alt="Random first image">
+                                <img src="../assets/img/easter-island.jpg" class="img-content-slide" alt="Random first image">
                             </div>
                             <div class="col-md-6">
                                 <p class="text-content-slide">
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Though officially part of Chile, Easter Island is completely isolated: it lies 3,000 kilometres away from the mainland. Over 800 enigmatic mo’ai structures stand silently across the terrain, offering no clues about their origin or what happened to the once-flourishing Polynesian civilization that called the island home. Here, you can meet the descendants of the indigenous Rapa Nui people and hear the legends of this storied island.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <h1 class="head-tag">#Cruise101</h1>
+                        <h1 class="head-tag">The 101st <br> Global Voyage</h1>
                         <div class="text-box">
-                            <h3 class="head-title-tag">Explore the land of fire</h3>
+                            <h3 class="head-title-tag">A Voyage to Six Continents</h3>
+                            <h5 style="color: #fff; font-weight: bold;">
+                                April 20 – August 1, 2019 <br>
+                                (Yokohama, Japan - Yokohama, Japan / 104 days)
+                            </h5>
                             <p class="text-content-slide">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Embark on a once-in-a-lifetime voyage in pursuit of the total solar eclipse. Along the way, you’ll see the mighty pyramids of Giza, commissioned by great pharaohs in search of immortality. You’ll visit Easter Island, where the enigmatic mo’ai stand to greet you. Soak up the sun on the picturesque beaches of Mykonos and Tahiti, then sail by the Great Barrier Reef in beautiful Australia. The ship will travel to the South Pacific in July – a perfect position to view the total solar eclipse of 2019.
                             </p>
                         </div>
+                        <!-- <div style="margin-bottom: 3%;">
+                            <img src="../assets/img/101st-map.jpg" class="map" alt="Map 100th">
+                        </div> -->
                         <button type="button" class="btn btn-warning btn-lg" style="margin-left: 5%" (click)="open(content101)">See Itinerary</button>
-                        <h4 (click)="itineraryCarousel.select('firstItinerary')">Prev <i class="fa fa-angle-left" aria-hidden="true"></i> Cruise 100</h4>
+                        <h4 (click)="itineraryCarousel.select('firstItinerary')" style="margin-top: 66%;">Prev <i class="fa fa-angle-left" aria-hidden="true"></i> Cruise 100</h4>
                     </div>
                 </div>
             </ng-template>
@@ -254,13 +286,14 @@
     <div class="section-dark-slide">
         <div class="row">
             <div class="col-md-6">
+                <h2 class="header-caption-small">We are <br> Peace Boat</h2>
                 <div class="page-carousel">
-                    <ngb-carousel #paceCarousel="ngbCarousel">
+                    <ngb-carousel #paceCarouselFirst="ngbCarousel">
                         <ng-template ngbSlide id="firstPlace">
                             <img src="../assets/img/slides/peace-boat-1.jpg" class="img-content-slide" alt="Random first slide">
-                            <div class="carousel-caption carousel-left">
+                            <!-- <div class="carousel-caption carousel-left">
                                 <p><b>Cruise 1</b></p>
-                            </div>
+                            </div> -->
                         </ng-template>
                         <ng-template ngbSlide id="secondPlace">
                             <img src="../assets/img/slides/peace-boat-2.jpg" class="img-content-slide" alt="Random second slide">
@@ -270,43 +303,43 @@
                         </ng-template>
                         <ng-template ngbSlide id="thirdPlace">
                             <img src="../assets/img/slides/peace-boat-3.jpg" class="img-content-slide" alt="Random third slide">
-                            <div class="carousel-caption carousel-left">
+                            <!-- <div class="carousel-caption carousel-left">
                                 <p><b>Cruise 3</b></p>
-                            </div>
+                            </div> -->
                         </ng-template>
                         <ng-template ngbSlide id="fourthPlace">
                             <img src="../assets/img/slides/peace-boat-4.jpg" class="img-content-slide" alt="Random fourth slide">
-                            <div class="carousel-caption carousel-left">
+                            <!-- <div class="carousel-caption carousel-left">
                                 <p><b>Cruise 4</b></p>
-                            </div>
+                            </div> -->
                         </ng-template>
                         <ng-template ngbSlide id="fifthPlace">
                             <img src="../assets/img/slides/peace-boat-5.jpg" class="img-content-slide" alt="Random fifth slide">
-                            <div class="carousel-caption carousel-left">
+                            <!-- <div class="carousel-caption carousel-left">
                                 <p><b>Cruise 5</b></p>
-                            </div>
+                            </div> -->
                         </ng-template>
                         <ng-template ngbSlide id="sixthPlace">
                             <img src="../assets/img/slides/peace-boat-6.jpg" class="img-content-slide" alt="Random fifth slide">
-                            <div class="carousel-caption carousel-left">
+                            <!-- <div class="carousel-caption carousel-left">
                                 <p><b>Cruise 6</b></p>
-                            </div>
+                            </div> -->
                         </ng-template>
                         <ng-template ngbSlide id="seventhPlace">
                             <img src="../assets/img/slides/peace-boat-7.jpg" class="img-content-slide" alt="Random fifth slide">
-                            <div class="carousel-caption carousel-left">
+                            <!-- <div class="carousel-caption carousel-left">
                                 <p><b>Cruise 7</b></p>
-                            </div>
+                            </div> -->
                         </ng-template>
                     </ngb-carousel>
                     <div class="carousel-indicators-thumbnail">
-                        <img src="../assets/img/slides/peace-boat-1.jpg" (click)="paceCarousel.select('firstPlace')" alt="Random first slide">
-                        <img src="../assets/img/slides/peace-boat-2.jpg" (click)="paceCarousel.select('secondPlace')" alt="Random second slide">
-                        <img src="../assets/img/slides/peace-boat-3.jpg" (click)="paceCarousel.select('thirdPlace')" alt="Random third slide">
-                        <img src="../assets/img/slides/peace-boat-4.jpg" (click)="paceCarousel.select('fourthPlace')" alt="Random fourth slide">
-                        <img src="../assets/img/slides/peace-boat-5.jpg" (click)="paceCarousel.select('fifthPlace')" alt="Random fifth slide">
-                        <img src="../assets/img/slides/peace-boat-6.jpg" (click)="paceCarousel.select('sixthPlace')" alt="Random fifth slide">
-                        <img src="../assets/img/slides/peace-boat-7.jpg" (click)="paceCarousel.select('seventhPlace')" alt="Random fifth slide">
+                        <img src="../assets/img/slides/peace-boat-1.jpg" (click)="paceCarouselFirst.select('firstPlace')" alt="Random first slide">
+                        <img src="../assets/img/slides/peace-boat-2.jpg" (click)="paceCarouselFirst.select('secondPlace')" alt="Random second slide">
+                        <img src="../assets/img/slides/peace-boat-3.jpg" (click)="paceCarouselFirst.select('thirdPlace')" alt="Random third slide">
+                        <img src="../assets/img/slides/peace-boat-4.jpg" (click)="paceCarouselFirst.select('fourthPlace')" alt="Random fourth slide">
+                        <img src="../assets/img/slides/peace-boat-5.jpg" (click)="paceCarouselFirst.select('fifthPlace')" alt="Random fifth slide">
+                        <img src="../assets/img/slides/peace-boat-6.jpg" (click)="paceCarouselFirst.select('sixthPlace')" alt="Random fifth slide">
+                        <img src="../assets/img/slides/peace-boat-7.jpg" (click)="paceCarouselFirst.select('seventhPlace')" alt="Random fifth slide">
                     </div>
                 </div>
             </div>
@@ -333,11 +366,169 @@
                 <a href="http://pbcruise.com/" target="_blank" class="btn btn-warning btn-lg">Visit Peace Boat Global Site</a>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="header-caption-small">We are <br> Peace Boat</h2>
+                <div class="page-carousel">
+                    <ngb-carousel #paceCarouselSecond="ngbCarousel">
+                        <ng-template ngbSlide id="firstPlaceLife">
+                            <img src="../assets/img/slides/life-on-board-1.jpg" class="img-content-slide" alt="Random first slide">
+                            <!-- <div class="carousel-caption carousel-left">
+                                <p><b>Cruise 1</b></p>
+                            </div> -->
+                        </ng-template>
+                        <ng-template ngbSlide id="secondPlaceLife">
+                            <img src="../assets/img/slides/life-on-board-2.jpg" class="img-content-slide" alt="Random second slide">
+                            <div class="carousel-caption carousel-left">
+                                <p><b>Cruise 2</b></p>
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide id="thirdPlaceLife">
+                            <img src="../assets/img/slides/life-on-board-3.jpg" class="img-content-slide" alt="Random third slide">
+                            <!-- <div class="carousel-caption carousel-left">
+                                <p><b>Cruise 3</b></p>
+                            </div> -->
+                        </ng-template>
+                        <ng-template ngbSlide id="fourthPlaceLife">
+                            <img src="../assets/img/slides/life-on-board-4.jpg" class="img-content-slide" alt="Random fourth slide">
+                            <!-- <div class="carousel-caption carousel-left">
+                                <p><b>Cruise 4</b></p>
+                            </div> -->
+                        </ng-template>
+                        <ng-template ngbSlide id="fifthPlaceLife">
+                            <img src="../assets/img/slides/life-on-board-5.jpg" class="img-content-slide" alt="Random fifth slide">
+                            <!-- <div class="carousel-caption carousel-left">
+                                <p><b>Cruise 5</b></p>
+                            </div> -->
+                        </ng-template>
+                        <ng-template ngbSlide id="sixthPlaceLife">
+                            <img src="../assets/img/slides/life-on-board-6.JPG" class="img-content-slide" alt="Random fifth slide">
+                            <!-- <div class="carousel-caption carousel-left">
+                                <p><b>Cruise 6</b></p>
+                            </div> -->
+                        </ng-template>
+                        <ng-template ngbSlide id="seventhPlaceLife">
+                            <img src="../assets/img/slides/life-on-board-7.jpg" class="img-content-slide" alt="Random fifth slide">
+                            <!-- <div class="carousel-caption carousel-left">
+                                <p><b>Cruise 7</b></p>
+                            </div> -->
+                        </ng-template>
+                    </ngb-carousel>
+                    <div class="carousel-indicators-thumbnail">
+                        <img src="../assets/img/slides/life-on-board-1.jpg" (click)="paceCarouselSecond.select('firstPlaceLife')" alt="Random first slide">
+                        <img src="../assets/img/slides/life-on-board-2.jpg" (click)="paceCarouselSecond.select('secondPlaceLife')" alt="Random second slide">
+                        <img src="../assets/img/slides/life-on-board-3.jpg" (click)="paceCarouselSecond.select('thirdPlaceLife')" alt="Random third slide">
+                        <img src="../assets/img/slides/life-on-board-4.jpg" (click)="paceCarouselSecond.select('fourthPlaceLife')" alt="Random fourth slide">
+                        <img src="../assets/img/slides/life-on-board-5.jpg" (click)="paceCarouselSecond.select('fifthPlaceLife')" alt="Random fifth slide">
+                        <img src="../assets/img/slides/life-on-board-6.JPG" (click)="paceCarouselSecond.select('sixthPlaceLife')" alt="Random fifth slide">
+                        <img src="../assets/img/slides/life-on-board-7.jpg" (click)="paceCarouselSecond.select('seventhPlaceLife')" alt="Random fifth slide">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h1>Peace Boat</h1>
+                <h1>Life on Board</h1>
+                <p>
+                    Participate in special lectures by guest journalists, specialist, thought leaders, and entertainers from different destinations. Join a class or hands-on workshop, Share your passion with the community by creating your own class or event, or learn from others. 
+                </p>
+                <p>
+                    On Board Programs
+                </p>
+                <ul class="list-section">
+                    <li>Guest Educators</li>
+                    <li>Guest Performers</li>
+                    <li>Japanese Language Lesson</li>
+                    <li>Festival/Party</li>
+                    <li>Culture School</li>
+                    <li>Self Planned Events</li>
+                </ul>
+                <a href="http://pbcruise.com/" target="_blank" class="btn btn-warning btn-lg">Visit Peace Boat Global Site</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="header-caption-small">We are <br> Peace Boat</h2>
+                <div class="page-carousel">
+                    <ngb-carousel #paceCarouselThird="ngbCarousel">
+                        <ng-template ngbSlide id="firstPlaceFacility">
+                            <img src="../assets/img/slides/facility-1.jpg" class="img-content-slide" alt="Random first slide">
+                            <!-- <div class="carousel-caption carousel-left">
+                                <p><b>Cruise 1</b></p>
+                            </div> -->
+                        </ng-template>
+                        <ng-template ngbSlide id="secondPlaceFacility">
+                            <img src="../assets/img/slides/facility-2.jpg" class="img-content-slide" alt="Random second slide">
+                            <div class="carousel-caption carousel-left">
+                                <p><b>Cruise 2</b></p>
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide id="thirdPlaceFacility">
+                            <img src="../assets/img/slides/facility-3.jpg" class="img-content-slide" alt="Random third slide">
+                            <!-- <div class="carousel-caption carousel-left">
+                                <p><b>Cruise 3</b></p>
+                            </div> -->
+                        </ng-template>
+                        <ng-template ngbSlide id="fourthPlaceFacility">
+                            <img src="../assets/img/slides/facility-4.jpg" class="img-content-slide" alt="Random fourth slide">
+                            <!-- <div class="carousel-caption carousel-left">
+                                <p><b>Cruise 4</b></p>
+                            </div> -->
+                        </ng-template>
+                        <ng-template ngbSlide id="fifthPlaceFacility">
+                            <img src="../assets/img/slides/facility-5.jpg" class="img-content-slide" alt="Random fifth slide">
+                            <!-- <div class="carousel-caption carousel-left">
+                                <p><b>Cruise 5</b></p>
+                            </div> -->
+                        </ng-template>
+                        <ng-template ngbSlide id="sixthPlaceFacility">
+                            <img src="../assets/img/slides/facility-6.jpg" class="img-content-slide" alt="Random fifth slide">
+                            <!-- <div class="carousel-caption carousel-left">
+                                <p><b>Cruise 6</b></p>
+                            </div> -->
+                        </ng-template>
+                        <ng-template ngbSlide id="seventhPlaceFacility">
+                            <img src="../assets/img/slides/facility-7.jpg" class="img-content-slide" alt="Random fifth slide">
+                            <!-- <div class="carousel-caption carousel-left">
+                                <p><b>Cruise 7</b></p>
+                            </div> -->
+                        </ng-template>
+                    </ngb-carousel>
+                    <div class="carousel-indicators-thumbnail">
+                        <img src="../assets/img/slides/facility-1.jpg" (click)="paceCarouselThird.select('firstPlaceFacility')" alt="Random first slide">
+                        <img src="../assets/img/slides/facility-2.jpg" (click)="paceCarouselThird.select('secondPlaceFacility')" alt="Random second slide">
+                        <img src="../assets/img/slides/facility-3.jpg" (click)="paceCarouselThird.select('thirdPlaceFacility')" alt="Random third slide">
+                        <img src="../assets/img/slides/facility-4.jpg" (click)="paceCarouselThird.select('fourthPlaceFacility')" alt="Random fourth slide">
+                        <img src="../assets/img/slides/facility-5.jpg" (click)="paceCarouselThird.select('fifthPlaceFacility')" alt="Random fifth slide">
+                        <img src="../assets/img/slides/facility-6.jpg" (click)="paceCarouselThird.select('sixthPlaceFacility')" alt="Random fifth slide">
+                        <img src="../assets/img/slides/facility-7.jpg" (click)="paceCarouselThird.select('seventhPlaceFacility')" alt="Random fifth slide">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h1>Peace Boat</h1>
+                <h1>Facility</h1>
+                <p>
+                    The array of public spaces on the ship have been adapted to serve as event halls, workshop rooms and rehearsal areas. The ballroom and lounges are ideal venues for presentations and large events, functioning both as lecture halls and stage spaces.
+                </p>
+                <p>
+                    We’ve got something for everyone: delectable Japanese cuisine, classic Western entrées, and exotic local fare inspired by our ports of call.
+                </p>
+                <p>
+                    Whether traveling with family or friends, there is a wide range of cabins to match every lifestyle and budget.
+                </p>
+                <a href="http://pbcruise.com/" target="_blank" class="btn btn-warning btn-lg">Visit Peace Boat Global Site</a>
+            </div>
+        </div>
     </div>
-    
-    <h1 class="head-section">Featured Upcoming Event</h1>
+</div>
+<div class="section section-dark" style="background-image: url('../assets/img/live-in-the-moment.jpg');">
+    <div class="vertical-center">
+        <h1 class="text-image">Find your Dream to explore <br> Around the World with us</h1>
+        <!-- <h2 class="text-image-small"><a [ngx-scroll-to]="'#event'">Register now!</a></h2> -->
+    </div>
 </div>
 <div class="section section-dark" id="event" style="background-image: url('../assets/img/night-light-bg.jpg');">
+    <h1 class="head-section">Featured Upcoming Event</h1>
     <div class="section-dark-main">
         <div class="row">
             <div class="col-md-1"></div>

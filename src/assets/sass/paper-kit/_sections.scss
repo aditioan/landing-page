@@ -152,13 +152,17 @@
         color: $white-color;
         font-weight: 600;
         text-transform: uppercase;
-        margin-top: 42%;
+        margin-top: 39%;
         position: relative;
         float: right;
         i{
             color: #ffce00;
             font-size: 26px;
         }
+    }
+    .map {
+        width: 515px !important;
+        min-height: 316px !important;
     }
 }
 .section-dark-container{
