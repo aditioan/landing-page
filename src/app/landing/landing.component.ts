@@ -14,12 +14,16 @@ export class LandingComponent implements OnInit {
     closeResult: string;
     content1: boolean;
     content2: boolean;
+    image: boolean;
+    map: boolean;
 
     @ViewChild('itineraryCarousel') itineraryCarousel: NgbCarousel;
 
     constructor(private modalService: NgbModal, public carouselService: NgbCarousel) {
       this.content1 = false;
       this.content2 = false;
+      this.image = true;
+      this.map = false;
     }
 
     ngOnInit() {
@@ -28,7 +32,7 @@ export class LandingComponent implements OnInit {
     }
   
     open(content) {
-      this.modalService.open(content, {size: 'lg'}).result.then((result) => {
+      const modalRef = this.modalService.open(content, {size: 'lg'}).result.then((result) => {
         this.closeResult = `Closed with: ${result}`;
       }, (reason) => {
         this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
@@ -45,6 +49,16 @@ export class LandingComponent implements OnInit {
       } else {
         this.content2 = !this.content2;
       }
+    }
+
+    showImage() {
+      this.image = true;
+      this.map = false;
+    }
+
+    showMap() {
+      this.image = false;
+      this.map = true;
     }
   
     private getDismissReason(reason: any): string {

@@ -110,16 +110,18 @@
                 </button>
             </div>
             <div class="modal-body">
-                <img src="../assets/img/machu-picchu.jpg" *ngIf="img" class="img-modal" alt="Map 100th">
+                <img src="../assets/img/machu-picchu.jpg" *ngIf="image" class="img-modal" alt="Map 100th">
                 <img src="../assets/img/100th-map.jpg" *ngIf="map" class="img-modal" alt="Map 100th">
             </div>
             <div class="modal-footer">
                 <div class="left-side">
-                    <button type="button" class="btn btn-default btn-link" (click)="showImage()">Destination</button>
+                    <button type="button" class="btn btn-danger btn-link" *ngIf="image" (click)="showImage()">Destination</button>
+                    <button type="button" class="btn btn-default btn-link" *ngIf="map" (click)="showImage()">Destination</button>
                 </div>
                 <div class="divider"></div>
                 <div class="right-side">
-                    <button type="button" class="btn btn-danger btn-link" (click)="showMap()">Map</button>
+                    <button type="button" class="btn btn-default btn-link" *ngIf="image" (click)="showMap()">Map</button>
+                    <button type="button" class="btn btn-danger btn-link" *ngIf="map" (click)="showMap()">Map</button>
                 </div>
             </div>
         </ng-template>
@@ -131,18 +133,18 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div class="text-box">
-                    <img src="../assets/img/madagascar.jpg" *ngIf="img" class="img-modal" alt="Map 100th">
-                    <img src="../assets/img/101st-map.jpg" *ngIf="map" class="img-modal" alt="Map 100th">
-                </div>
+                <img src="../assets/img/madagascar.jpg" *ngIf="image" class="img-modal" alt="Map 100th">
+                <img src="../assets/img/101st-map.jpg" *ngIf="map" class="img-modal" alt="Map 100th">
             </div>
             <div class="modal-footer">
                 <div class="left-side">
-                    <button type="button" class="btn btn-default btn-link" (click)="showImage()">Destination</button>
+                    <button type="button" class="btn btn-danger btn-link" *ngIf="image" (click)="showImage()">Destination</button>
+                    <button type="button" class="btn btn-default btn-link" *ngIf="map" (click)="showImage()">Destination</button>
                 </div>
                 <div class="divider"></div>
                 <div class="right-side">
-                    <button type="button" class="btn btn-danger btn-link" (click)="showMap()">Map</button>
+                    <button type="button" class="btn btn-default btn-link" *ngIf="image" (click)="showMap()">Map</button>
+                    <button type="button" class="btn btn-danger btn-link" *ngIf="map" (click)="showMap()">Map</button>
                 </div>
             </div>
         </ng-template>
