@@ -105,55 +105,47 @@
         <ng-template #content100 let-c="close" let-d="dismiss">
             <div class="modal-header">
                 <h5 class="modal-title">The 100th Global Voyage</h5>
+                <button type="button" class="close" aria-label="Close" (click)="c('Close click')">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body">
-                <div class="text-box">
-                    <h3 class="head-title-tag">A Trip to be Remembered, A Journey to the Land of Ice and Fire</h3>
-                    <h5 style="color: #fff; font-weight: bold;">
-                        December 26, 2018 – March 31, 2019 <br>
-                        (Yokohama, Japan - Yokohama, Japan / 96 days)
-                    </h5>
-                    <p class="text-content-slide">
-                        This voyage traverses the Southern Hemisphere to explore the awe-inspiring nature of Port Elizabeth, Madagascar, Bora Bora, Argentina, and more. Experience Africa’s rich natural heritage on safari in Port Elizabeth and among the vibrant flora and fauna of Madagascar. Enjoy the breathtaking view of hundreds of endlessly cascading waterfalls in Iguazú Falls. You will explore the world’s oldest desert, the white beaches of Bora Bora, and the vibrant streets of Rio de Janeiro. For an extra fee, join a special expedition to one of the least-explored corners of the world: the great continent of Antarctica.
-                    </p>
-                </div>
+                <img src="../assets/img/machu-picchu.jpg" *ngIf="img" class="img-modal" alt="Map 100th">
+                <img src="../assets/img/100th-map.jpg" *ngIf="map" class="img-modal" alt="Map 100th">
             </div>
             <div class="modal-footer">
                 <div class="left-side">
-                    <button type="button" [ngx-scroll-to]="'#event'" class="btn btn-default btn-link" (click)="c('Close click')">Register</button>
+                    <button type="button" class="btn btn-default btn-link" (click)="showImage()">Destination</button>
                 </div>
                 <div class="divider"></div>
                 <div class="right-side">
-                    <button type="button" class="btn btn-danger btn-link" (click)="c('Close click')">Maybe Next Time</button>
+                    <button type="button" class="btn btn-danger btn-link" (click)="showMap()">Map</button>
                 </div>
             </div>
         </ng-template>
         <ng-template #content101 let-c="close" let-d="dismiss">
-                <div class="modal-header">
-                    <h5 class="modal-title">The 101st <br> Global Voyage</h5>
+            <div class="modal-header">
+                <h5 class="modal-title">The 101st <br> Global Voyage</h5>
+                <button type="button" class="close" aria-label="Close" (click)="c('Close click')">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-box">
+                    <img src="../assets/img/madagascar.jpg" *ngIf="img" class="img-modal" alt="Map 100th">
+                    <img src="../assets/img/101st-map.jpg" *ngIf="map" class="img-modal" alt="Map 100th">
                 </div>
-                <div class="modal-body">
-                    <div class="text-box">
-                        <h3 class="head-title-tag">A Voyage to Six Continents</h3>
-                        <h5 style="color: #fff; font-weight: bold;">
-                            April 20 – August 1, 2019 <br>
-                            (Yokohama, Japan - Yokohama, Japan / 104 days)
-                        </h5>
-                        <p class="text-content-slide">
-                            Embark on a once-in-a-lifetime voyage in pursuit of the total solar eclipse. Along the way, you’ll see the mighty pyramids of Giza, commissioned by great pharaohs in search of immortality. You’ll visit Easter Island, where the enigmatic mo’ai stand to greet you. Soak up the sun on the picturesque beaches of Mykonos and Tahiti, then sail by the Great Barrier Reef in beautiful Australia. The ship will travel to the South Pacific in July – a perfect position to view the total solar eclipse of 2019.
-                        </p>
-                    </div>
+            </div>
+            <div class="modal-footer">
+                <div class="left-side">
+                    <button type="button" class="btn btn-default btn-link" (click)="showImage()">Destination</button>
                 </div>
-                <div class="modal-footer">
-                    <div class="left-side">
-                        <button type="button" [ngx-scroll-to]="'#event'" class="btn btn-default btn-link" (click)="c('Close click')">Register</button>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="right-side">
-                        <button type="button" class="btn btn-danger btn-link" (click)="c('Close click')">Maybe Next Time</button>
-                    </div>
+                <div class="divider"></div>
+                <div class="right-side">
+                    <button type="button" class="btn btn-danger btn-link" (click)="showMap()">Map</button>
                 </div>
-            </ng-template>
+            </div>
+        </ng-template>
         <ngb-carousel #itineraryCarousel="ngbCarousel">
             <ng-template ngbSlide id="firstItinerary">
                 <div class="row">
@@ -552,9 +544,10 @@
 <div class="section section-dark-content" id="register">
     <div class="section-dark-container">
         <div class="row">
-            <div class="col-md-8 mr-auto ml-auto">
+            <div class="col-md-12 mr-auto ml-auto">
                 <h2 class="text-center">Register</h2>
-                <form class="contact-form">
+                <iframe src="https://go.pardot.com/l/220132/2017-09-20/5xygl" type="text/html" frameborder="0" allowTransparency="true" style="border: 0; width: 100%; height: 525px;"></iframe>
+                <!-- <form class="contact-form">
                     <div class="row">
                         <div class="col-md-6">
                             <label>Name</label>
@@ -582,7 +575,7 @@
                             <button type="button" class="btn btn-warning btn-lg btn-fill">Register</button>
                         </div>
                     </div>
-                </form>
+                </form> -->
             </div>
         </div>
     </div>
