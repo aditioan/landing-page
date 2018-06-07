@@ -7,19 +7,92 @@
             margin-left: auto;
             margin-right: auto;
             position: relative;
-            right: -3%;
+            right: -5%;
             font-size: $font-size-h3;
             color: $white-color;
             text-transform: uppercase;
         }
     }
 
+    .img-content{
+        max-width: 100%;
+        padding: 2%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 30vh;
+    }
+
+    .page-carousel {
+        border-radius: 12px !important;
+        border: none !important;
+        width: 100%;
+        min-height: 80vh;
+        max-height: 725px;
+    }
+
     .carousel-indicators-thumbnail img{
         min-height: 6vh !important;
     }
 
+    .carousel-inner .carousel-item img {
+        box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+        height: 420px;
+        display: -ms-flexbox;
+        display: flex;
+        min-height: 65vh;
+        max-height: 725px;
+        width: 100%;
+    }
+
+    .carousel-indicators-thumbnail {
+        bottom: 80px;
+        position: relative;
+        -ms-flex-pack: left;
+        justify-content: left;
+        margin-left: 15%;
+    }
+
+    .carousel-left {
+        text-align: left;
+        padding-bottom: 60px;
+    }
+
+    .carousel-indicators-thumbnail img {
+        min-height: 4vh !important;
+    }
+
+    .carousel-indicators {
+        bottom: 95px;
+        -ms-flex-pack: left;
+        justify-content: left;
+    }
+
     .head-tag{
         font-size: 4.6em;
+    }
+
+    .page-header {
+        min-height: 65vh !important;
+        max-height: 500px !important;
+    }
+
+    .page-carousel{
+        border-radius: 12px !important;
+        border: none !important;
+        width: 100%;
+        min-height: 70vh;
+        max-height: 500px;
+    }
+
+    .section {
+        padding: 35px 0;
+        position: relative;
+    }
+
+    .section-dark-nocontent {
+        background-color: #363636;
+        height: 100%;
     }
 
     .section-dark-box .carousel-indicators{
