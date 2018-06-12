@@ -1,5 +1,4 @@
 /*          Changes for small display      */
-
 @media (max-width: 767px){
     .navbar{
         .navbar-brand{
@@ -20,7 +19,7 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        height: 30vh;
+        height: 45vh;
     }
 
     .page-carousel {
@@ -37,10 +36,10 @@
 
     .carousel-inner .carousel-item img {
         box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
-        height: 420px;
+        // height: 275px;
         display: -ms-flexbox;
         display: flex;
-        min-height: 65vh;
+        min-height: 93vh;
         max-height: 725px;
         width: 100%;
     }
@@ -73,7 +72,7 @@
     }
 
     .page-header {
-        min-height: 65vh !important;
+        min-height: 93vh !important;
         max-height: 500px !important;
     }
 
